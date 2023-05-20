@@ -89,3 +89,13 @@ export const EmployeData = [
     name: "aya adel",
   },
 ];
+export const typeIssue = [
+  {
+    id: 1,
+    type: "Urgent",
+  },
+  {
+    id: 2,
+    type: "Typical",
+  },
+];
