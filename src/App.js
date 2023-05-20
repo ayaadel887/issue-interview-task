@@ -1,11 +1,14 @@
 import "./App.css";
 import Department from "./component/Department/Department";
-import { departments } from "./Data.js";
-
+import People from "./component/People/People";
+import { departments, EmployeData } from "./Data.js";
 function App() {
   return (
     <>
-      <Department departments={departments} />
+      <section className="container">
+        <Department departments={departments} />
+        <People EmployeData={EmployeData} />
+      </section>
     </>
   );
 }

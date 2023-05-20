@@ -37,7 +37,7 @@ export const departments = [
   },
 ];
 
-export const People = [
+export const EmployeData = [
   {
     id: 1,
     source: "./images/1.png",
