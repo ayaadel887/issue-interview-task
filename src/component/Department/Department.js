@@ -1,7 +1,27 @@
-import React from "react";
+import React, { useState } from "react";
+import styles from "./Department.module.css";
+const Department = ({ departments }) => {
+  const [selectDepart, setSelectDepart] = useState(null);
+  const handlerSelectDepartment = (id) => {
+    setSelectDepart(id);
+  };
 
-const Department = () => {
-  return <div>Department</div>;
+  return (
+    <div className={styles.container}>
+      <h2>Relating to what departent</h2>
+      <div className={styles.content}>
+        {departments.map((dep) => (
+          <span
+            className={selectDepart === dep?.id ? styles.select : styles.depart}
+            key={dep.id}
+            onClick={() => handlerSelectDepartment(dep?.id)}
+          >
+            {dep?.title}
+          </span>
+        ))}
+      </div>
+    </div>
+  );
 };
 
 export default Department;
