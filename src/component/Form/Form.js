@@ -16,7 +16,7 @@ const Form = () => {
   return (
     <div className={styles.l__form}>
       <div className={styles.form}>
-        <h1>Issue</h1>
+        <h2 className={styles.form__title}>Issue Details</h2>
         <div className={styles.form__div}>
           <input
             type="text"
@@ -30,7 +30,7 @@ const Form = () => {
             }}
           />
           <label htmlFor="" className={styles.form__label}>
-            Issue
+            Issue Description
           </label>
         </div>
         <div className={styles.form__div}>
@@ -65,12 +65,13 @@ const Form = () => {
             Choises
           </label>
         </div>
+
         <div className={styles.form__div}>
-          <textarea
+          <input
             type="text"
+            value={note}
             className={styles.form__input}
             placeholder=" "
-            value={note}
             onChange={(e) => {
               setState({
                 note: e.target.value,

@@ -7,7 +7,7 @@ const People = ({ EmployeData }) => {
   };
   return (
     <div className={styles.container}>
-      <h2>Direct it to whome ?</h2>
+      <h2 className={styles.heder}>Direct it to whome ?</h2>
       <div className={styles.content}>
         {EmployeData.map((person) => (
           <div
@@ -19,11 +19,7 @@ const People = ({ EmployeData }) => {
             }
             onClick={() => handlerSelectPeople(person.id)}
           >
-            <img
-              src="https://www.seiu1000.org/sites/main/files/imagecache/hero/main-images/camera_lense_0.jpeg"
-              alt=""
-              className={styles.image}
-            />
+            <img src={person.source} alt="" className={styles.image} />
             <p className={styles.title}>{person.name}</p>
           </div>
         ))}

@@ -1,32 +1,67 @@
 .container {
+  border: 1 solid #b71375;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  height: 800px;
+  margin-top: 20px;
+}
+.heder {
+  margin-top: 60px;
 }
 .content {
-  display: flex;
+  display: grid;
   justify-content: center;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+}
+@media screen and (min-width< 660px) {
+  .content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+  }
 }
 .imageContainer {
-  padding: 10px 20px;
-  border: 1px solid grey;
-  border-radius: 10px;
-  margin-inline: 6px;
+  width: 300px;
+  height: 260;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 20px;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+  padding-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .image {
-  width: 74px;
-  height: 74px;
+  height: 160px;
+  width: 160px;
   border-radius: 50%;
+  border: 5px solid #272133;
+  margin-top: 20px;
+  box-shadow: 0 10px 50px rgba(235, 25, 110, 1);
 }
 .title {
-  color: blue;
+  width: 200px;
+  padding: 5px;
+  text-align: center;
+  border-radius: 10px;
+  border: 1 solid #b71375;
+  background-color: #b71375;
+  color: #d9d9d9;
 }
 .selectPeople {
-  border: none;
-  padding: 10px 20px;
-  border-radius: 10px;
-  margin-inline: 6px;
-  box-shadow: 0 10px 25px rgba(92, 99, 105, 0.2);
+  width: 300px;
+  height: 260;
+  background-color: rgba(255, 255, 255, 0.06);
+  border: 12px dashed rgba(93, 241, 158, 0.6);
+  border-radius: 20px;
+  box-shadow: 0px 0px 39px 7px rgba(15, 208, 103, 0.3);
+  padding-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .imageContainer:hover {
   background-color: #d9d9d9;

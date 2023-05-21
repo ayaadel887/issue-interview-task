@@ -10,13 +10,11 @@ const IssueTicket = ({ departments, EmployeData, typeIssue, company }) => {
   return (
     <section className={styles.container}>
       <h1>Issue</h1>
-      <section className="container">
-        <IssueType typeIssue={typeIssue} />
-        <Department departments={departments} />
-        <Company company={company} />
-        <People EmployeData={EmployeData} />
-        <Form />
-      </section>
+      <IssueType typeIssue={typeIssue} />
+      <Department departments={departments} />
+      <Company company={company} />
+      <People EmployeData={EmployeData} />
+      <Form />
     </section>
   );
 };

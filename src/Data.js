@@ -41,52 +41,45 @@ export const EmployeData = [
   {
     id: 1,
     source: "./images/1.png",
-    name: "aya adel",
+    name: "Abduljalil Chhada",
   },
   {
     id: 2,
-    source: "./images/2.png",
-    name: "aya adel",
+    source: "./images/ali.png",
+    name: "Ali Shhada",
   },
+
   {
     id: 3,
-    source: "./images/3.png",
-    name: "aya adel",
+    source: "./images/emadarab.png",
+    name: "Emad Arab",
   },
   {
     id: 4,
-    source: "./images/4.png",
-    name: "aya adel",
+    source: "./images/hosen.png",
+    name: "Hosen Shihade",
   },
   {
     id: 5,
-    source: "./images/5.png",
-    name: "aya adel",
+    source: "./images/bardhaji.png",
+    name: "Badr Haji",
   },
   {
     id: 6,
-    source: "./images/6.png",
-    name: "aya adel",
+    source: "./images/nishana.jpg",
+    name: "Nishana",
   },
+
   {
     id: 7,
-    source: "./images/7.png",
-    name: "aya adel",
+    source: "./images/ahmed.jpg",
+    name: "Ahmad Khalil",
   },
+
   {
     id: 8,
-    source: "./images/8.png",
-    name: "aya adel",
-  },
-  {
-    id: 9,
-    source: "./images/9.png",
-    name: "aya adel",
-  },
-  {
-    id: 10,
-    source: "./images/10.png",
-    name: "aya adel",
+    source: "./images/abdullah.jpg",
+    name: "Abdullah",
   },
 ];
 export const typeIssue = [

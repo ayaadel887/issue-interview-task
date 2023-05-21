@@ -9,10 +9,14 @@
   padding: 4rem 2rem;
   border-radius: 1rem;
   box-shadow: 0 10px 25px rgba(92, 99, 105, 0.2);
+  background-color: #fff;
 }
 .form__title {
-  font-weight: 400;
+  font-size: 3vw;
   margin-bottom: 3rem;
+  color: #000;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 .form__div {
   position: relative;
@@ -92,5 +96,4 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-right: 80px;
 }

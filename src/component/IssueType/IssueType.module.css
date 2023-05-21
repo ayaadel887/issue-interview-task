@@ -1,20 +1,27 @@
 .bttn {
-  padding: 12px 35px;
-  font-weight: bold;
-  background-color: gray;
-  border: none;
+  width: 150px;
   font-size: 20px;
-  margin-inline: 8px;
-  border-radius: 10px;
-  box-shadow: 5px 5px 5px #888888;
+  padding: 10px;
+  margin-left: 10px;
+  color: aliceblue;
+  background: linear-gradient(to top, #c471f5 0%, #fa71cd 100%);
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  border-radius: 9px;
+  border: none;
 }
+
 .selectIssue {
-  padding: 12px 35px;
-  font-weight: bold;
-  background-color: rgb(116, 3, 3);
-  border: none;
+  width: 150px;
   font-size: 20px;
-  margin-inline: 8px;
-  border-radius: 10px;
-  box-shadow: 5px 5px 5px #888888;
+  padding: 10px;
+  margin-left: 10px;
+  color: aliceblue;
+  background-color: red;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  border-radius: 9px;
+  border: none;
+}
+@media screen and (min-width: 660px) {
 }
