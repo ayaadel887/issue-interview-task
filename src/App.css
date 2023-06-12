@@ -36,3 +36,16 @@
     transform: rotate(360deg);
   }
 }
+
+/* Variables */
+:root {
+  --main-color: #2196f3;
+  --second-color: #777;
+  --section-bg-color: #ececec;
+  --hover-color: #eafafa;
+  --padding-top: 90px;
+  --padding-bottom: 90px;
+  --main-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  --main-transition: 0.4s;
+  --main-line-height: 1.7;
+}

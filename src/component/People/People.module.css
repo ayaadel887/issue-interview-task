@@ -1,68 +1,86 @@
-.container {
-  border: 1 solid #b71375;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 800px;
-  margin-top: 20px;
+/* Testimonials */
+.PeopleSection {
+  width: 100%;
+  margin-top: var(--padding-top);
+  margin-inline: 0px;
+  padding-top: var(--padding-top);
+  padding-bottom: var(--padding-bottom);
+  background-color: var(--section-bg-color);
 }
-.heder {
-  margin-top: 60px;
-}
-.content {
+.PeopleSection .boxes {
   display: grid;
-  justify-content: center;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 55px 40px;
+  padding-inline: 30px;
 }
-@media screen and (min-width< 660px) {
-  .content {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 1rem;
-  }
-}
-.imageContainer {
+.PeopleSection .boxes .box {
   width: 300px;
-  height: 260;
-  background-color: rgba(255, 255, 255, 0.6);
-  border-radius: 20px;
-  border: 2px solid rgba(255, 255, 255, 0.1);
-  box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
-  padding-bottom: 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  position: relative;
+  background-color: white;
+  box-shadow: var(--main-shadow);
+  padding: 20px;
+  border-top: 2px solid white;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  transition: var(--main-transition);
+  -webkit-transition: var(--main-transition);
+  -moz-transition: var(--main-transition);
+  -ms-transition: var(--main-transition);
+  -o-transition: var(--main-transition);
 }
-.image {
-  height: 160px;
-  width: 160px;
+.PeopleSection .boxes .box:hover {
+  border-top: 2px solid #ffa500;
+}
+.PeopleSection .boxes .box img {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border: 10px solid var(--section-bg-color);
+  top: -50px;
+  right: 0;
   border-radius: 50%;
-  border: 5px solid #272133;
-  margin-top: 20px;
-  box-shadow: 0 10px 50px rgba(235, 25, 110, 1);
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  transition: var(--main-transition);
+  -webkit-transition: var(--main-transition);
+  -moz-transition: var(--main-transition);
+  -ms-transition: var(--main-transition);
+  -o-transition: var(--main-transition);
 }
-.title {
-  width: 200px;
-  padding: 5px;
-  text-align: center;
+.PeopleSection .boxes .box:hover img {
   border-radius: 10px;
-  border: 1 solid #b71375;
-  background-color: #b71375;
-  color: #d9d9d9;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
 }
 .selectPeople {
+  border: 2px solid #ffa500;
   width: 300px;
-  height: 260;
-  background-color: rgba(255, 255, 255, 0.06);
-  border: 12px dashed rgba(93, 241, 158, 0.6);
-  border-radius: 20px;
-  box-shadow: 0px 0px 39px 7px rgba(15, 208, 103, 0.3);
-  padding-bottom: 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  position: relative;
+  background-color: white;
+  box-shadow: var(--main-shadow);
+  padding: 20px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  transition: var(--main-transition);
+  -webkit-transition: var(--main-transition);
+  -moz-transition: var(--main-transition);
+  -ms-transition: var(--main-transition);
+  -o-transition: var(--main-transition);
 }
-.imageContainer:hover {
-  background-color: #d9d9d9;
+.PeopleSection .boxes .box h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+.PeopleSection .boxes .box span {
+  color: var(--second-color);
 }
